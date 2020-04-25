@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estadisticas|Direccion Nacional De Estado</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--FONT OSWALD-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!--SCROOL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- #CUSTON.CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Chart Js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+</head>
+
+<div class="prin">
+<img src="/img/brand1.png" alt="paz" class="nav-brand" >
+</div>
+
+<body>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+
+<div class="container">
+    <nav class="nav-main show">
+        <ul class="nav-menu">
+            <li>
+
+                <a href="/index.html">INICIO</a>
+            </li>
+            <li>
+                    <a href="/notice-principal/notice.html">NOTICIAS</a>
+                </li>
+                <li>
+                        <a href="/estadistica/estadistica.html">ESTADISTICAS</a>
+                    </li>
+        </ul>
+        <ul class="nav-menu-right">
+            <li>
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>   
+    </nav>
+<hr>
+<div class="titulo-primera-grafica">
+    <h1>Estadisticas Del Movimiento Por La Paz Y La Vida</h1>
+</div>
+
+<div class="statwidget-estadisticas">
+    <header><p>Total de Beneficiarios Atendidas</p>
+    <section class="statbody">122.308</section></header>
+</div>
+
+
+<div class="statwidget-estadisticas">
+    <header><p>Actividades Realizadas</p>
+    <section class="statbody">10.946</section></header>
+</div>
+
+
+<!--PRIMERA GRAFICA-->
+<div class="titulo-primera-grafica">
+    <h1>Poblacion Atendida por Grupo Hetario Marzo</h1>
+</div>
+
+<div class="grafica1">
+<canvas id="Grafica" width="500" height="200"></canvas>
+<script>
+    var ctx = document.getElementById("Grafica").getContext("2d");
+    var Grafica= new Chart(ctx,{
+        type: 'bar',
+        data: {
+            labels: ['Niños y Niñas','Adolescentes','Jovenes',
+            'Adultos','Adultos Mayores'],
+            datasets: [{
+                label: 'Beneficiaros',
+                data:[15.177,11.410,33.509,21.820,12.991],
+                backgroundColor:[
+                    'rgb(0,128,0,0.7)',
+                    'rgb(255,153,0,0.7)',
+                    'rgb(220,57,28,0.7)',
+                    'rgb(70,132,238,0.7)',
+                    'rgb(119,47,60,0.7)',
+                ]
+            }]
+        },
+        options:{
+            scales:{
+                yAxes:[{
+                    ticks:{
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    }
+    )
+</script>
+</div>
+
+<!--SEGUNDA GRAFICA-->
+<div class="titulo-primera-grafica">
+    <h1>Actividades Realizadas Marzo</h1>
+</div>
+
+<div class="grafica1">
+<canvas id="Grafica2" width="500" height="200"></canvas>
+<script>
+    var ctx = document.getElementById("Grafica2").getContext("2d");
+    var Grafica= new Chart(ctx,{
+        type: 'bar',
+        data: {
+            labels: ['Organizativa','Recreativa','Deportiva',
+            'Cultural','Productiva','Formativa','Comunicacional'
+            , 'Preventiva'],
+            datasets: [{
+                label: 'Actividades',
+                data:[246,245,734,313,166,383,244,524],
+                backgroundColor:[
+                    'rgb(70,132,238,0.7)',
+                    'rgb(220,57,28,0.7)',
+                    'rgb(255,153,0,0.7)',
+                    'rgb(0,128,0,0.7)',
+                    'rgb(119,47,60,0.7)',
+                    'rgb(103,0,206,0.7)',
+                    'rgb(152,72,7,0.7)',
+                    'rgb(0,32,96,0.7)',
+        
+                ]
+            }]
+        },
+        options:{
+            scales:{
+                yAxes:[{
+                    ticks:{
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    }
+    )
+</script>
+</div>
+
+
+<!--TERCERA GRAFICA-->
+
+
+<div class="titulo-primera-grafica">
+    <h1>Beneficiarios Atendido 2020</h1>
+</div>
+
+<div class="grafica1">
+<canvas id="Grafica3" width="500" height="200"></canvas>
+<script>
+    var ctx = document.getElementById("Grafica3").getContext("2d");
+    var Grafica= new Chart(ctx,{
+        type: 'line',
+        data: {
+            labels: ['Enero','Febrero','Marzo'],
+            datasets: [{
+                label: 'Beneficiaros',
+                data:[189.631,207.394,122.308],
+                backgroundColor:[
+                    'rgb(70,132,238,0.7)',
+                    'rgb(70,132,238,0.7)',
+                    'rgb(70,132,238,0.7)'
+                ],
+                borderColor:[
+                    'rgb(70,132,238,0.7)',
+                ],
+                fill:false,
+                borderWidth: 3,
+                pointHoverRadius: 5,
+            }]
+        },
+        options:{
+            scales:{
+                yAxes:[{
+                    ticks:{
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    }
+    )
+</script>
+</div>
+
+
+<!--CUARTA GRAFICA-->
+<div class="titulo-primera-grafica">
+    <h1>Distribución Atendido Indirectos e Indirectos 2020</h1>
+</div>
+
+<div class="grafica1">
+<canvas id="Grafica4" width="500" height="200"></canvas>
+<script>
+    var ctx = document.getElementById("Grafica4").getContext("2d");
+    var Grafica= new Chart(ctx,{
+        type: 'pie',
+        data: {
+            labels: ['Directos','Indirectos'],
+            datasets: [{
+                label: 'Beneficiaros',
+                data:[424.395,94.938],
+                backgroundColor:[
+                    'rgb(70,132,238,0.8)',
+                    'rgb(220,57,28,0.8)',
+                ]
+            }]
+        },
+        options:{
+            scales:{
+                yAxes:[{
+                    ticks:{
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    }
+    )
+</script>
+</div>
+
+
+</div>
+
+
+                <script src="/main.js">  </script>
+
+</body>
+</html>
