@@ -72,9 +72,23 @@
     margin-left: 20px;
   }
   
-  hr {
-    margin: 10px 0;
-  }
+  .nav-menu-right i{
+  top: 165px;
+  left: 50%;
+  width: 1200px;
+  z-index: 8;
+  overflow: hidden;
+  display: block;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+.nav-menu-right i:hover{
+  color: #46a2fd;
+}
+
 
   /* Responsive Button */
 .menu-btn {
