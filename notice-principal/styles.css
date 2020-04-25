@@ -51,28 +51,28 @@
   }
   
   /* Navbar Left */
-  .nav-main ul {
-    display: flex;
-  }
-  
-  .nav-main ul li {
-    padding: 80px;
-  }
-  
-  .nav-main ul li a {
-    padding: 2px;
-  }
-  
-  .nav-main ul li a:hover {
-    border-bottom: 2px solid #fff;
-  }
-  
-  .nav-main ul.nav-menu {
-    flex: 1;
-    margin-left: 20px;
-  }
-  
-  .nav-menu-right i{
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  padding: 80px;
+}
+
+.nav-main ul li a {
+  padding: 2px;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.nav-menu-right i{
   top: 165px;
   left: 50%;
   width: 1200px;
@@ -187,4 +187,3 @@ hr {
     .footer-links .footer-container {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
